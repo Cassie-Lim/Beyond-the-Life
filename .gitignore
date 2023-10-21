@@ -8,3 +8,14 @@
 .vs/
 
 *.tmp
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.opendb
+
