@@ -6,7 +6,7 @@
 [Pp]ackages/
 
 .vscode/
-.plastic
+.plastic/
 
 *.tmp
 *.csproj
