@@ -5,7 +5,8 @@
 [Ll]ogs/
 [Pp]ackages/
 
-.vs/
+.vscode/
+.plastic
 
 *.tmp
 *.csproj
