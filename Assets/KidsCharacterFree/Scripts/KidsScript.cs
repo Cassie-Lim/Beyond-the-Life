@@ -31,8 +31,8 @@ public class KidsScript : MonoBehaviour
   private const float turn_speed = 2.0f;
   private const float move_speed = 2.0f;
   private const float run_speed = 4.0f;
-  private const KeyCode MoveKey = KeyCode.UpArrow;
-  // private const KeyCode MoveKey = KeyCode.DownArrow;
+  private const KeyCode MoveForwardKey = KeyCode.UpArrow;
+  private const KeyCode MoveBackwardKey = KeyCode.DownArrow;
   private const KeyCode JumpKey = KeyCode.S;
   private const KeyCode DamageKey = KeyCode.Q;
   private const KeyCode FaintDownKey = KeyCode.W;
@@ -201,7 +201,7 @@ public class KidsScript : MonoBehaviour
     _Animator.SetFloat(SpeedParameter, speed);
 
     //------------------------------------------------------------ Forward
-    if (Input.GetKey(MoveKey))
+    if (Input.GetKey(MoveForwardKey))
     {
       // velocity
       if(_Animator.GetCurrentAnimatorStateInfo(0).fullPathHash == MoveState)
@@ -211,12 +211,30 @@ public class KidsScript : MonoBehaviour
         MOVE_RESET();
       }
     }
-    if (Input.GetKeyDown(MoveKey))
+    if (Input.GetKeyDown(MoveForwardKey))
     {
       if(_Animator.GetCurrentAnimatorStateInfo(0).tagHash != JumpTag){
         _Animator.CrossFade(MoveState, 0.1f, 0, 0);
       }
     }
+    //------------------------------------------------------------ Backward
+    if (Input.GetKey(MoveBackwardKey))
+    {
+      // velocity
+      if(_Animator.GetCurrentAnimatorStateInfo(0).fullPathHash == MoveState)
+      {
+        Vector3 velocity = this.transform.rotation * new Vector3(0, 0, -speed);
+        MOVE_XZ(velocity);
+        MOVE_RESET();
+      }
+    }
+    if (Input.GetKeyDown(MoveBackwardKey))
+    {
+      if(_Animator.GetCurrentAnimatorStateInfo(0).tagHash != JumpTag){
+        _Animator.CrossFade(MoveState, 0.1f, 0, 0);
+      }
+    }
+    
 
     //------------------------------------------------------------ character rotation
     if (Input.GetKey(TurnRightKey) && !Input.GetKey(TurnLeftKey)){
@@ -225,7 +243,7 @@ public class KidsScript : MonoBehaviour
     else if (Input.GetKey(TurnLeftKey) && !Input.GetKey(TurnRightKey)){
       this.transform.Rotate(Vector3.up, -turn_speed);
     }
-    if (!Input.GetKey(MoveKey) && !Input.GetKey(KeyCode.DownArrow))
+    if (!Input.GetKey(MoveForwardKey) && !Input.GetKey(MoveBackwardKey))
     {
       if(_Animator.GetCurrentAnimatorStateInfo(0).tagHash != JumpTag)
       {
@@ -254,14 +272,14 @@ public class KidsScript : MonoBehaviour
     if(_Animator.GetCurrentAnimatorStateInfo(0).fullPathHash != JumpState
         && !_Animator.IsInTransition(0))
     {
-      if (Input.GetKeyUp(MoveKey))
+      if (Input.GetKeyUp(MoveForwardKey)||Input.GetKeyUp(MoveBackwardKey))
       {
         if(!Input.GetKey(TurnLeftKey) && !Input.GetKey(TurnRightKey))
         {
           _Animator.CrossFade(IdleState, 0.1f, 0, 0);
         }
       }
-      else if (!Input.GetKey(MoveKey) && !Input.GetKey(KeyCode.DownArrow))
+      else if (!Input.GetKey(MoveForwardKey) && !Input.GetKey(MoveBackwardKey))
       {
         if (Input.GetKeyUp(TurnRightKey) || Input.GetKeyUp(TurnLeftKey))
         {
@@ -311,7 +329,7 @@ public class KidsScript : MonoBehaviour
           && !_Animator.IsInTransition(0)
           && JumpPoseParameter < 0)
       {
-        if (Input.GetKey(MoveKey) || Input.GetKey(KeyCode.DownArrow)
+        if (Input.GetKey(MoveForwardKey) || Input.GetKey(MoveBackwardKey)
             || Input.GetKey(TurnLeftKey) || Input.GetKey(TurnRightKey))
         {
           _Animator.CrossFade(MoveState, 0.3f, 0, 0);
