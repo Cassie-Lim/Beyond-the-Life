@@ -40,10 +40,14 @@ namespace HeneGames.DialogueSystem
         [SerializeField] private bool animateText = true;
 
         [Range(0.1f, 1f)]
-        [SerializeField] private float textAnimationSpeed = 0.5f;
+        [SerializeField] private float textAnimationSpeed = 0.8f;
+        // [SerializeField] private float textAnimationSpeed = 0.5f;
+
 
         [Header("Next sentence input")]
-        public KeyCode actionInput = KeyCode.Space;
+        // public KeyCode actionInput = KeyCode.Space;
+        // public MouseButton actionInput = MouseButton.Left;
+        public int actionInput = 0; // MouseButton.Left
 
         private void Start()
         {
@@ -55,7 +59,9 @@ namespace HeneGames.DialogueSystem
         private void Update()
         {
             //Next dialogue input
-            if (Input.GetKeyDown(actionInput))
+            // if (Input.GetKeyDown(actionInput))
+            if(Input.GetMouseButtonDown(0))
+            // if(Input.GetMouseButtonDown(actionInput))
             {
                 NextSentence();
             }

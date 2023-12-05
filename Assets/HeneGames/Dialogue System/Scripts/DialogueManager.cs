@@ -9,9 +9,8 @@ namespace HeneGames.DialogueSystem
     {
         private int currentSentence;
         private float coolDownTimer;
-        private bool dialogueIsOn;
-        private DialogueTrigger dialogueTrigger;
-
+        private bool dialogueIsOn=false;
+        private bool dialogueTriggeredOnce=false;
         public enum TriggerState
         {
             Collision,
@@ -38,146 +37,73 @@ namespace HeneGames.DialogueSystem
                 coolDownTimer -= Time.deltaTime;
             }
 
-            //Start dialogue by input
-            if (Input.GetKeyDown(DialogueUI.instance.actionInput) && dialogueTrigger != null && !dialogueIsOn)
+            // //Start dialogue by input
+            // Debug.Log(DialogueUI.instance.actionInput);
+            // if (Input.GetMouseButtonDown(0) && !dialogueIsOn)
+            // // if (Input.GetMouseButtonDown(DialogueUI.instance.actionInput) && !dialogueIsOn)
+            // // if (Input.GetMouseButtonDown(DialogueUI.instance.actionInput) && !dialogueIsOn)
+            // // if (Input.GetKeyDown(DialogueUI.instance.actionInput) && dialogueTrigger != null && !dialogueIsOn)
+            // {
+            //     // //Trigger event inside DialogueTrigger component
+            //     // if (dialogueTrigger != null)
+            //     // {
+            //     //     dialogueTrigger.startDialogueEvent.Invoke();
+            //     // }
+            //     Debug.Log("Manager update invoke ");
+            //     startDialogueEvent.Invoke();
+
+            //     //If component found start dialogue
+            //     DialogueUI.instance.StartDialogue(this);
+
+            //     //Hide interaction UI
+            //     DialogueUI.instance.ShowInteractionUI(false);
+
+            //     dialogueIsOn = true;
+            // }
+            // DialogueUI.instance.ShowInteractionUI(false);
+        }
+
+        private void OnMouseDown()
+        {
+            // Check if dialogue is currently off and it has not been triggered before
+            if (!dialogueTriggeredOnce && !dialogueIsOn)
             {
-                //Trigger event inside DialogueTrigger component
-                if (dialogueTrigger != null)
-                {
-                    dialogueTrigger.startDialogueEvent.Invoke();
-                }
-
                 startDialogueEvent.Invoke();
-
                 //If component found start dialogue
                 DialogueUI.instance.StartDialogue(this);
-
-                //Hide interaction UI
-                DialogueUI.instance.ShowInteractionUI(false);
-
                 dialogueIsOn = true;
+                dialogueTriggeredOnce = true;
             }
         }
 
-        //Start dialogue by trigger
-        private void OnTriggerEnter(Collider other)
-        {
-            if (triggerState == TriggerState.Collision && !dialogueIsOn)
-            {
-                //Try to find the "DialogueTrigger" component in the crashing collider
-                if (other.gameObject.TryGetComponent<DialogueTrigger>(out DialogueTrigger _trigger))
-                {
-                    //Trigger event inside DialogueTrigger component and store refenrece
-                    dialogueTrigger = _trigger;
-                    dialogueTrigger.startDialogueEvent.Invoke();
+        // //Start dialogue by pressing DialogueUI action input
+        // private void OnTriggerStay(Collider other)
+        // {
+        //     if (triggerState == TriggerState.Input)
+        //     {
+        //         //Show interaction UI
+        //         DialogueUI.instance.ShowInteractionUI(true);
+        //     }
+        // }
 
-                    startDialogueEvent.Invoke();
+        // private void OnTriggerExit(Collider other)
+        // {
+        //     //Hide interaction UI
+        //     DialogueUI.instance.ShowInteractionUI(false);
 
-                    //If component found start dialogue
-                    DialogueUI.instance.StartDialogue(this);
-
-                    dialogueIsOn = true;
-                }
-            }
-        }
-
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (triggerState == TriggerState.Collision && !dialogueIsOn)
-            {
-                //Try to find the "DialogueTrigger" component in the crashing collider
-                if (collision.gameObject.TryGetComponent<DialogueTrigger>(out DialogueTrigger _trigger))
-                {
-                    //Trigger event inside DialogueTrigger component and store refenrece
-                    dialogueTrigger = _trigger;
-                    dialogueTrigger.startDialogueEvent.Invoke();
-
-                    startDialogueEvent.Invoke();
-
-                    //If component found start dialogue
-                    DialogueUI.instance.StartDialogue(this);
-
-                    dialogueIsOn = true;
-                }
-            }
-        }
-
-        //Start dialogue by pressing DialogueUI action input
-        private void OnTriggerStay(Collider other)
-        {
-            if (dialogueTrigger != null)
-                return;
-
-            if (triggerState == TriggerState.Input && dialogueTrigger == null)
-            {
-                //Try to find the "DialogueTrigger" component in the crashing collider
-                if (other.gameObject.TryGetComponent<DialogueTrigger>(out DialogueTrigger _trigger))
-                {
-                    //Show interaction UI
-                    DialogueUI.instance.ShowInteractionUI(true);
-
-                    //Store refenrece
-                    dialogueTrigger = _trigger;
-                }
-            }
-        }
-
-        private void OnTriggerStay2D(Collider2D collision)
-        {
-            if (dialogueTrigger != null)
-                return;
-
-            if (triggerState == TriggerState.Input && dialogueTrigger == null)
-            {
-                //Try to find the "DialogueTrigger" component in the crashing collider
-                if (collision.gameObject.TryGetComponent<DialogueTrigger>(out DialogueTrigger _trigger))
-                {
-                    //Show interaction UI
-                    DialogueUI.instance.ShowInteractionUI(true);
-
-                    //Store refenrece
-                    dialogueTrigger = _trigger;
-                }
-            }
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            //Try to find the "DialogueTrigger" component from the exiting collider
-            if (other.gameObject.TryGetComponent<DialogueTrigger>(out DialogueTrigger _trigger))
-            {
-                //Hide interaction UI
-                DialogueUI.instance.ShowInteractionUI(false);
-
-                //Stop dialogue
-                StopDialogue();
-            }
-        }
-
-        private void OnTriggerExit2D(Collider2D collision)
-        {
-            //Try to find the "DialogueTrigger" component from the exiting collider
-            if (collision.gameObject.TryGetComponent<DialogueTrigger>(out DialogueTrigger _trigger))
-            {
-                //Hide interaction UI
-                DialogueUI.instance.ShowInteractionUI(false);
-
-                //Stop dialogue
-                StopDialogue();
-            }
-        }
-
+        //     //Stop dialogue
+        //     StopDialogue();
+        // }
         public void StartDialogue()
         {
             //Cooldown timer
             coolDownTimer = 0.5f;
 
             //Start event
-            if(dialogueTrigger != null)
-            {
-                dialogueTrigger.startDialogueEvent.Invoke();
-            }
-
+            // if(dialogueTrigger != null)
+            // {
+            //     dialogueTrigger.startDialogueEvent.Invoke();
+            // }
             startDialogueEvent.Invoke();
 
             //Reset sentence index
@@ -202,11 +128,11 @@ namespace HeneGames.DialogueSystem
             //Add one to sentence index
             currentSentence++;
 
-            //Next sentence event
-            if (dialogueTrigger != null)
-            {
-                dialogueTrigger.nextSentenceDialogueEvent.Invoke();
-            }
+            // //Next sentence event
+            // if (dialogueTrigger != null)
+            // {
+            //     dialogueTrigger.nextSentenceDialogueEvent.Invoke();
+            // }
 
             nextSentenceDialogueEvent.Invoke();
 
@@ -235,12 +161,6 @@ namespace HeneGames.DialogueSystem
 
         public void StopDialogue()
         {
-            //Stop dialogue event
-            if (dialogueTrigger != null)
-            {
-                dialogueTrigger.endDialogueEvent.Invoke();
-            }
-
             endDialogueEvent.Invoke();
 
             //Hide dialogue UI
@@ -254,7 +174,6 @@ namespace HeneGames.DialogueSystem
 
             //Remove trigger refence
             dialogueIsOn = false;
-            dialogueTrigger = null;
         }
 
         private void PlaySound(AudioClip _audioClip)
