@@ -1,4 +1,4 @@
-# DEATH JOURNEY
+# DEYOND LIFE
 
 [TOC]
 
@@ -6,12 +6,13 @@
 
 - [x] [2023.10.21] 🚀🚀 Release the resources for level 0.
 - [x] [2023.10.22] 🔨 🧩Change camera to first-person view.
-
+- [x] [2023.12.06] :fire: :fire: Add dialogue system and audios.
 
 ## 👉 TODO 
-- [ ] Add dialog system to plugin in story line.
-- [ ] Release more levels.
+- [ ] Adding exist and pause support.
+- [ ] Add game entry.
 - [ ] Tidy up the repo.
+- [ ] 
 - [ ] ...
 
 ## Intro
