@@ -5,6 +5,7 @@ using UnityEngine;
 namespace Sample {
 public class KidsScript : MonoBehaviour
 {
+  public AudioSource m_AudioSource;
   private Animator _Animator;
   private CharacterController _Ctrl;
   private Vector3 _MoveDirection = Vector3.zero;
@@ -55,7 +56,15 @@ public class KidsScript : MonoBehaviour
     // DIRECTION_LIGHT();
     GRAVITY();
     STATUS();
-
+    if(_Animator.GetCurrentAnimatorStateInfo(0).fullPathHash == MoveState){
+      if (!m_AudioSource.isPlaying)
+      {
+          m_AudioSource.Play();
+      }
+    }
+    else{
+      m_AudioSource.Stop();
+    }
     if(!_Status.ContainsValue( true ))
     {
         MOVE();

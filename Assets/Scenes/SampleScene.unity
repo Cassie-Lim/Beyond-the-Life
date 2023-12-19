@@ -7804,6 +7804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2571689292225610219, guid: 48c897de7006f436ebc613446e766067, type: 3}
+      propertyPath: m_AudioSource
+      value: 
+      objectReference: {fileID: 5086123663684342884}
     - target: {fileID: 3725680173231446836, guid: 48c897de7006f436ebc613446e766067, type: 3}
       propertyPath: m_Name
       value: Boy0_Humanoid
