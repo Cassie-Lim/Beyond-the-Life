@@ -18,7 +18,6 @@ public class GameEnding : MonoBehaviour
     bool m_HasAudioPlayed;
 
     float m_Timer;
-    
     void OnTriggerEnter (Collider other)
     {
         if (other.gameObject == player)
@@ -44,7 +43,7 @@ public class GameEnding : MonoBehaviour
         }
     }
 
-    void EndLevel (CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
+    void EndLevel(CanvasGroup imageCanvasGroup, bool waitChoice, AudioSource audioSource)
     {
         if (!m_HasAudioPlayed)
         {
@@ -56,14 +55,28 @@ public class GameEnding : MonoBehaviour
 
         if (m_Timer > fadeDuration + displayImageDuration)
         {
-            if (doRestart)
+            if (waitChoice)
             {
-                SceneManager.LoadScene (0);
+                // Display the choice UI instead of immediately reloading the scene
+                imageCanvasGroup.interactable=true;
+                imageCanvasGroup.gameObject.SetActive(true);
+                imageCanvasGroup.alpha = 1;
             }
             else
             {
-                Application.Quit ();
+                Application.Quit();
             }
         }
+    }
+
+    // Add these methods to handle button clicks
+    public void OnRestartButtonClicked()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void OnExitButtonClicked()
+    {
+        Application.Quit();
     }
 }
