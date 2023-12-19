@@ -4,3 +4,5 @@ Your home is bathed in a soft, unfamiliar light. But what makes it all the more 
 
 ----
 
+The command for processing videos:
+ ffmpeg -i .\intro_cc_echo.mp4 -color_primaries bt709 -color_trc bt709 -colorspace bt709 -color_range pc -vcodec libx264 -profile:v baseline intro_cc_echo.mp4

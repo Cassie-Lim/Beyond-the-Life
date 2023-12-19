@@ -802,6 +802,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237513908}
   m_CullTransparentMesh: 1
+--- !u!1 &307107259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673335228028816879, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &307107264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307107259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 307107265}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: f11a8816a7a49794fa7a745fab3499f3, type: 2}
+    sentence: I don't really have the mood to take a seat.
+    sentenceSound: {fileID: 8300000, guid: 5a7a4b8cdc7215045aaceece7978dab8, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &307107265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307107259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cb662050306db4faf8be9341b630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &359266376
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +951,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359266376}
   m_CullTransparentMesh: 1
+--- !u!1 &599977896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1020298120748388174, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &599977901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599977896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 599977902}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: f11a8816a7a49794fa7a745fab3499f3, type: 2}
+    sentence: That's strange! It is not even openable!
+    sentenceSound: {fileID: 8300000, guid: f45a1f4fb3b7b834bbe94a3284ad1f23, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &599977902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599977896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cb662050306db4faf8be9341b630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &631758231
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1117,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2132270221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &674872866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673193520112291617, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &674872871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674872866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 674872872}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: f11a8816a7a49794fa7a745fab3499f3, type: 2}
+    sentence: How come isn't anyone at home?
+    sentenceSound: {fileID: 8300000, guid: 34414d7df5d764a4dbf6f81ff8f9220f, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &674872872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674872866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cb662050306db4faf8be9341b630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +1501,7 @@ GameObject:
   - component: {fileID: 783272778}
   - component: {fileID: 783272780}
   - component: {fileID: 783272779}
+  - component: {fileID: 783272781}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -1345,7 +1526,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 800}
+  m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &783272779
 MonoBehaviour:
@@ -1382,6 +1563,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783272777}
   m_CullTransparentMesh: 1
+--- !u!225 &783272781
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783272777}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &792948465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,6 +1845,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2132270221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &924075137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3674741054233077078, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &924075142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924075137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cb662050306db4faf8be9341b630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &924075143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924075137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 924075142}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: f11a8816a7a49794fa7a745fab3499f3, type: 2}
+    sentence: This wardrobe seems to be empty.
+    sentenceSound: {fileID: 8300000, guid: 33ee2635034fe254296c22cb7df2b3be, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &950534902
 GameObject:
   m_ObjectHideFlags: 3
@@ -3264,6 +3517,14 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2832891807527715807, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2846616223874199994, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247588632543331709, guid: 549c69af39b84624b8a053537c407def, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5142,6 +5403,36 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3674741052935752607, guid: 549c69af39b84624b8a053537c407def, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2080296315}
+    - targetCorrespondingSourceObject: {fileID: 3674741052639348585, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1334175650}
+    - targetCorrespondingSourceObject: {fileID: 3674741052639348585, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1334175649}
+    - targetCorrespondingSourceObject: {fileID: 3674741052639348585, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1334175648}
+    - targetCorrespondingSourceObject: {fileID: 3673185130871963582, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1586640494}
+    - targetCorrespondingSourceObject: {fileID: 3673185130871963582, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1586640493}
+    - targetCorrespondingSourceObject: {fileID: 3673185130871963582, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1586640495}
+    - targetCorrespondingSourceObject: {fileID: 3674741054233077078, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 924075142}
+    - targetCorrespondingSourceObject: {fileID: 3674741054233077078, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 924075143}
+    - targetCorrespondingSourceObject: {fileID: 3673335228028816879, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307107265}
+    - targetCorrespondingSourceObject: {fileID: 3673335228028816879, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307107264}
     - targetCorrespondingSourceObject: {fileID: 2299231745693751782, guid: 549c69af39b84624b8a053537c407def, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1225592319}
@@ -5154,6 +5445,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2299231745693751782, guid: 549c69af39b84624b8a053537c407def, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1225592321}
+    - targetCorrespondingSourceObject: {fileID: 3673193520112291617, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 674872872}
+    - targetCorrespondingSourceObject: {fileID: 3673193520112291617, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 674872871}
+    - targetCorrespondingSourceObject: {fileID: 3673193521759315858, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782839095}
+    - targetCorrespondingSourceObject: {fileID: 3673193521759315858, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782839094}
+    - targetCorrespondingSourceObject: {fileID: 1020298120748388174, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 599977902}
+    - targetCorrespondingSourceObject: {fileID: 1020298120748388174, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 599977901}
+    - targetCorrespondingSourceObject: {fileID: 3673693490915270803, guid: 549c69af39b84624b8a053537c407def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2140281556}
   m_SourcePrefab: {fileID: 100100000, guid: 549c69af39b84624b8a053537c407def, type: 3}
 --- !u!1 &1225592316 stripped
 GameObject:
@@ -5172,6 +5484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allowTriggerOnce: 1
   audioSource: {fileID: 1225592321}
   startDialogueEvent:
     m_PersistentCalls:
@@ -5237,6 +5550,13 @@ MonoBehaviour:
     sentence: I am afraid not, Leo. You're no longer among the living. Your journey,
       has just begun.
     sentenceSound: {fileID: 8300000, guid: 2e50341aefad99b46868131f763f01f6, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueCharacter: {fileID: 11400000, guid: 95e5ce5696c72eb46a7aeffe9380f82f, type: 2}
+    sentence: Just a quick reminder, do not talk to anyone else in this house. They
+      are in no way kind as me!
+    sentenceSound: {fileID: 8300000, guid: d35d34f7e0d43054fa8f5c8a53bb63d0, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -5622,6 +5942,87 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2132270221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1334175644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3674741052639348585, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1334175648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334175644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.97456086, y: 1.2796135, z: 0.15931186}
+  m_Center: {x: 0.0006582289, y: 0.021636428, z: 0.031254977}
+--- !u!114 &1334175649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334175644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1334175650}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 0}
+    sentence: Holy crap! This is my mother! What is she doing with this weird creature!
+    sentenceSound: {fileID: 8300000, guid: b154137f6ce10524c82775d4e340947c, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1334175650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334175644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cb662050306db4faf8be9341b630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1359571252
 GameObject:
   m_ObjectHideFlags: 0
@@ -5996,7 +6397,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c0f716a9e9ac00c438b95158ba195a58, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0a1a2eb6919534c4dbb94365971af473, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6124,7 +6525,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2789d5ce62baaba4ab1ee8bb172304a6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b92748059235947499af015bb4917d69, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6221,6 +6622,7 @@ GameObject:
   - component: {fileID: 1479293553}
   - component: {fileID: 1479293552}
   - component: {fileID: 1479293551}
+  - component: {fileID: 1479293555}
   m_Layer: 0
   m_Name: IntroVideoPlayer
   m_TagString: Untagged
@@ -6241,7 +6643,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1479293552}
+  audioSource: {fileID: 1479293555}
   videoUI: {fileID: 783272777}
+  fadeDuration: 2
+  echoDelay: 0.5
 --- !u!328 &1479293552
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -6250,7 +6655,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479293550}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 6de75febd6127934399424a14b989183, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 4c431edfcb103db4d9bc95b0d490aee9, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -6293,6 +6698,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1479293555
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479293550}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4de49e42512885341b74ab74e0a9c1b5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.644
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.09166667
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1579032254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6415,6 +6916,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1325878227796914855, guid: 17def6ff476a0684ab193f2f739eb13f, type: 3}
   m_PrefabInstance: {fileID: 1579032254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1586640489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673185130871963582, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1586640493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586640489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 5086123663684342884}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1586640494}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: f11a8816a7a49794fa7a745fab3499f3, type: 2}
+    sentence: This door does not seem to open.
+    sentenceSound: {fileID: 8300000, guid: 4af27aff0e3f42f4182ded2d75e319d9, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1586640494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586640489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cb662050306db4faf8be9341b630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1586640495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586640489}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.314822, y: 1.8427, z: 0.15520418}
+  m_Center: {x: 0.0036889613, y: 0.92855, z: 0.2795021}
 --- !u!1 &1595198145
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,6 +7160,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2132270221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1782839089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673193521759315858, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1782839094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782839089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69cb662050306db4faf8be9341b630d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1782839095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782839089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1782839094}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: f11a8816a7a49794fa7a745fab3499f3, type: 2}
+    sentence: My sister's bed! Where does she go? It has been so late!
+    sentenceSound: {fileID: 8300000, guid: 4823c243d23c0d049a083a7e5ceaa6b3, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1906424378
 GameObject:
   m_ObjectHideFlags: 0
@@ -7106,6 +7748,54 @@ Transform:
   - {fileID: 852288786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2140281551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3673693490915270803, guid: 549c69af39b84624b8a053537c407def, type: 3}
+  m_PrefabInstance: {fileID: 1225592315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140281556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140281551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowTriggerOnce: 0
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 924075142}
+        m_TargetAssemblyTypeName: EventClick, Assembly-CSharp
+        m_MethodName: OnMouseDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: f11a8816a7a49794fa7a745fab3499f3, type: 2}
+    sentence: This can't be my home. My mom will always leave dirty dishes for tomorrow!
+    sentenceSound: {fileID: 8300000, guid: 21cd98afead725d4d82efac08ada439e, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &5086123663684342879
 PrefabInstance:
   m_ObjectHideFlags: 0

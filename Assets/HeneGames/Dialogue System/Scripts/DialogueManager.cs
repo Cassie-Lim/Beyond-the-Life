@@ -7,6 +7,7 @@ namespace HeneGames.DialogueSystem
 {
     public class DialogueManager : MonoBehaviour
     {
+        public bool allowTriggerOnce=false;
         private int currentSentence;
         private float coolDownTimer;
         private bool dialogueIsOn=false;
@@ -66,7 +67,7 @@ namespace HeneGames.DialogueSystem
         private void OnMouseDown()
         {
             // Check if dialogue is currently off and it has not been triggered before
-            if (!dialogueTriggeredOnce && !dialogueIsOn)
+            if ((!dialogueTriggeredOnce|!allowTriggerOnce) && !dialogueIsOn)
             {
                 startDialogueEvent.Invoke();
                 //If component found start dialogue
