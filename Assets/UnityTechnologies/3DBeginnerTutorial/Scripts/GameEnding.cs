@@ -73,6 +73,7 @@ public class GameEnding : MonoBehaviour
     public void OnRestartButtonClicked()
     {
         SceneManager.LoadScene(0);
+        m_HasAudioPlayed = false
     }
 
     public void OnExitButtonClicked()
