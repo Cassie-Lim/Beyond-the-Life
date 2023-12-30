@@ -836,7 +836,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &359266379
 MonoBehaviour:
@@ -1972,8 +1972,8 @@ Transform:
   m_Children:
   - {fileID: 1137068042}
   - {fileID: 1479293553}
-  - {fileID: 1037284876}
   - {fileID: 1407742039}
+  - {fileID: 1037284876}
   - {fileID: 792948469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7745,7 +7745,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 0
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &1906424380
 MonoBehaviour:
