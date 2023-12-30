@@ -26,3 +26,10 @@
 
 Your participation is warmly welcomed! Feel free to join me on this game development journey😄🎮. While I've crafted a rough storyline for the game (feel free to reach out for more details), it's absolutely okay if you have your own creative ideas to bring to the table.
 
+## Acknowledgements
+
+Resources from following websites have contributed to the creation of "Beyond the Life":
+
+- https://skfb.ly/oBKoJ
+- https://assetstore.unity.com/
+- [Craiyon - Your FREE AI image generator tool: Create AI art!](https://www.craiyon.com/)
