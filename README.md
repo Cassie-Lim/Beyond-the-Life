@@ -18,26 +18,26 @@
 - [ ] Add more cues for interaction (e.g. Interactable objects should have some signals when hovered.)
 - [ ] ...
 
-<video width="320" height="240" controls>
-<source src="README.assets/game_trailor.mp4" type="video/mp4" title="dialogue">
-</video>
+
+
+
 <center>Intro video to level 0</center>
 
-<video width="320" height="240" controls>
-<source src="README.assets/game_diag.mp4" type="video/mp4" title="dialogue">
-</video>
+
+
+https://github.com/Cassie-Lim/Beyond-the-Life/assets/98252468/58364364-c38c-4881-9817-0d66a7fc1ac7
+
+
 
 <center>Dialogue canvas</center>
 
-<video width="320" height="240" controls>
-<source src="README.assets/game_caught.mp4" type="video/mp4">
-</video>
-<center>Game over page</center>
+https://github.com/Cassie-Lim/Beyond-the-Life/assets/98252468/39a4fdb7-39bc-4faa-835a-dc70f3f92c09
 
-<video width="320" height="240" controls>
-<source src="README.assets/game_move.mp4" type="video/mp4">
-</video>
 <center>Developer page</center>
+
+https://github.com/Cassie-Lim/Beyond-the-Life/assets/98252468/137edfc2-2643-4e16-bb82-7f4d6b4d6ebe
+
+
 
 ## Intro
 
