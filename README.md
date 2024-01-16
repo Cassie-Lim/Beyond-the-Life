@@ -18,6 +18,27 @@
 - [ ] Add more cues for interaction (e.g. Interactable objects should have some signals when hovered.)
 - [ ] ...
 
+<video width="320" height="240" controls>
+<source src="README.assets/game_trailor.mp4" type="video/mp4" title="dialogue">
+</video>
+<center>Intro video to level 0</center>
+
+<video width="320" height="240" controls>
+<source src="README.assets/game_diag.mp4" type="video/mp4" title="dialogue">
+</video>
+
+<center>Dialogue canvas</center>
+
+<video width="320" height="240" controls>
+<source src="README.assets/game_caught.mp4" type="video/mp4">
+</video>
+<center>Game over page</center>
+
+<video width="320" height="240" controls>
+<source src="README.assets/game_move.mp4" type="video/mp4">
+</video>
+<center>Developer page</center>
+
 ## Intro
 
 "Beyond the Life" is an adventure game that explores the boundaries between life and death, deepening the player's understanding of mortality. Players take on the role of a boy who meets an untimely end, guided by a mysterious force to traverse different time periods and interact with various characters. Through these interactions, the boy gains insight into the diverse perspectives on death.
