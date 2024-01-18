@@ -1,6 +1,12 @@
 # BEYOND THE LIFE
 
-[TOC]
+- [BEYOND THE LIFE](#beyond-the-life)
+  - [🎉 News](#-news)
+  - [👉 TODO](#-todo)
+  - [Intro](#intro)
+  - [Your Participation is welcomed!](#your-participation-is-welcomed)
+  - [Acknowledgements](#acknowledgements)
+
 
 ## 🎉 News 
 
@@ -20,6 +26,10 @@
 
 
 
+## Intro
+
+"Beyond the Life" is an adventure game that explores the boundaries between life and death, deepening the player's understanding of mortality. Players take on the role of a boy who meets an untimely end, guided by a mysterious force to traverse different time periods and interact with various characters. Through these interactions, the boy gains insight into the diverse perspectives on death.
+
 
 <center>Intro video to level 0</center>
 
@@ -38,10 +48,6 @@ https://github.com/Cassie-Lim/Beyond-the-Life/assets/98252468/39a4fdb7-39bc-4faa
 https://github.com/Cassie-Lim/Beyond-the-Life/assets/98252468/137edfc2-2643-4e16-bb82-7f4d6b4d6ebe
 
 
-
-## Intro
-
-"Beyond the Life" is an adventure game that explores the boundaries between life and death, deepening the player's understanding of mortality. Players take on the role of a boy who meets an untimely end, guided by a mysterious force to traverse different time periods and interact with various characters. Through these interactions, the boy gains insight into the diverse perspectives on death.
 
 ## Your Participation is welcomed!
 
